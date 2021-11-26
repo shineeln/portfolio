@@ -63,7 +63,7 @@ header .socials ul li s:hover {
 }
 
 main .hero {
-  background: url(../../images/img3.jpg);
+  background: url(../images/img3.jpg);
   width: 100%;
   background-size: cover;
 }
