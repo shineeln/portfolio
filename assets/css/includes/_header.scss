@@ -1,4 +1,26 @@
-h1 {
-  font-size: 76px;
-  color: orangered;
+header {
+  .logo {
+    font-family: $logo;
+  }
+  .menu ul li {
+    cursor: pointer;
+    color: $gray;
+    transition: 1s;
+    &:hover {
+      color: $white;
+    }
+  }
+  .socials {
+    .spotify {
+      background-color: #009f8b;
+      color: #fff;
+      padding: 5px 10px;
+    }
+    ul li s {
+      color: $gray;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
 }

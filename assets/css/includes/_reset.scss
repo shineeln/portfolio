@@ -5,8 +5,26 @@
 }
 
 body {
-  color: $mainColor;
-  font-size: 21px;
-  font-family: $alice;
+  color: $white;
+  background: $black;
+  font-size: 21px;  
   scroll-behavior: smooth;
+  font-family: $mon!important;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+section {
+  padding: 0 40px;
+}
+
+.card-title {
+  font-family: $lobster;
+  font-size: 50px;
+            font-weight: bold;
+            width: 100%;
+            color: $white;
+            margin: 40px 0;
 }
