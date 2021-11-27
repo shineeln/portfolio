@@ -283,6 +283,11 @@ main #contact i {
   color: #e5104c;
 }
 
+main .photos div:hover {
+  -webkit-box-shadow: #e5104c 0px 1px 4px, #333333 0px 0px 0px 3px;
+          box-shadow: #e5104c 0px 1px 4px, #333333 0px 0px 0px 3px;
+}
+
 .scrollTop {
   position: fixed;
   bottom: 20px;
