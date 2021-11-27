@@ -23,8 +23,14 @@ section {
 .card-title {
   font-family: $lobster;
   font-size: 50px;
-            font-weight: bold;
-            width: 100%;
-            color: $white;
-            margin: 40px 0;
+  font-weight: bold;
+  width: 100%;
+  color: $white;
+  margin: 40px 0;
+  &:hover {
+    color: $pink;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 36px;
+  }
 }

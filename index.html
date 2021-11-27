@@ -20,7 +20,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <header class="w-1/6 fixed h-screen top-0 left-0 p-10 flex flex-col justify-between items-center">
+    <header class="hidden md:w-1/6 md:fixed md:h-screen top-0 left-0 p-10 md:flex flex-col justify-between items-center">
         <div class="logo text-5xl hover:text-gray-200 cursor-pointer">Shinee</div>
         <div class="menu">
             <ul class="text-sm uppercase font-bold">
@@ -48,9 +48,9 @@
         </div>
     </header>
 
-    <main class="overflow-x-hidden right w-5/6 absolute right-0 top-0">
+    <main class="overflow-x-hidden right w-full md:w-5/6 md:absolute md:right-0 md:top-0">
 
-        <section id="main" class="hero relative h-screen bg-cover">
+        <section id="main" class="hero relative h-screen">
             <div class="hero-box p-10 text-center h-full flex flex-col justify-between items-center">
                 <h1 class="ml11 flex justify-center items-start">
                     <span class="text-wrapper">
@@ -64,15 +64,26 @@
 
         <section id="about">
             <div class="container mx-auto">
-                <div class="card-title">Миний тухай</div>
-                <div class="card flex items-center justify-between gap-8">
-                    <div class="flex-0 items-center justify-center..."> <img class="rounded-full h-56 w-56 object-cover"
-                            src="assets/images/img6.jpeg" alt=""></div>
-                    <p class="flex-1">Миний нэрийг Шинэцэцэг гэдэг. Монгол улсын Боловсролын Их Сургуулийг 2018
-                        онд
-                        МХУЗ-ын багш мэргэжлээр төгссөн. MKIT сургалтын төвд JAVA хэлний дунд шатны боловсрол авсан.
-                        2021 оноос Энэтхэгийн Их Сургуульд програм хангамжийн боловсролоо дээшлүүлэхээр суралцаж байна.
-                        Одоогоор IT Wizard LLC-д веб хөгжүүлэгчээр ажиллаж байна.</p>
+                <div class="card-title" id="left">Миний тухай</div>
+                <div class="w-full mx-auto rounded-lg border-2 border-pink-800 shadow-lg px-5 pt-5 pb-10 text-gray-800" id="right">
+                    <div class="w-full pt-1 pb-5">
+                        <div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
+                            <img src="assets/images/img6.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="w-full mb-10">
+                        <div class="text-3xl text-gray-50 text-left leading-tight h-3">“</div>
+                        <p class="text-lg text-gray-50 text-center px-5">Миний нэрийг Шинэцэцэг гэдэг. Монгол улсын Боловсролын Их Сургуулийг 2018
+                            онд
+                            МХУЗ-ын багш мэргэжлээр төгссөн. MKIT сургалтын төвд JAVA хэлний дунд шатны боловсрол авсан.
+                            2021 оноос Энэтхэгийн Их Сургуульд програм хангамжийн боловсролоо дээшлүүлэхээр суралцаж байна.
+                            Одоогоор IT Wizard LLC-д веб хөгжүүлэгчээр ажиллаж байна.</p>
+                        <div class="text-3xl text-gray-50 text-right leading-tight h-3 -mt-3">”</div>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-md text-gray-50 font-bold text-center">Э.Шинэцэцэг</p>
+                        <p class="text-xs text-center text-gray-100">shinetsetseg@itwizard.mn</p>
+                    </div>
                 </div>
             </div>
 
@@ -80,8 +91,8 @@
 
         <section id="skill">
             <div class="container mx-auto">
-                <div class="card-title">Ур чадвар</div>
-                <div class="card">
+                <div class="card-title" id="left">Ур чадвар</div>
+                <div class="card" id="right">
                     <div class="bar expert" data-skill="HTML5"></div>
                     <div class="bar advanced" data-skill="CSS3"></div>
                     <div class="bar basic" data-skill="SASS"></div>
@@ -99,35 +110,35 @@
 
         <section id="project">
             <div class="container mx-auto">
-                <div class="card-title">Оролцсон төслүүд</div>
-                <div class="swiper myProjects">
+                <div class="card-title" id="left">Оролцсон төслүүд</div>
+                <div class="swiper myProjects" id="right">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a href="https://www.edugeumcheon.or.kr/">
                                 <img src="assets/images/pro1.PNG" alt="">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a href="http://dswoo.or.kr/ko/v.do?a=Main">
                                 <img src="assets/images/pro2.PNG" alt="">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a href="http://design.wellpage.co.kr/_2020/kpu/">
                                 <img src="assets/images/pro3.PNG" alt="">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a href="http://design.wellpage.co.kr/_2020/asc/">
                                 <img src="assets/images/pro4.PNG" alt="">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a href="http://thetastable.cafe24.com/kr/">
                                 <img src="assets/images/pro5.PNG" alt="">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a href="https://gmjob.insightjob.co.kr/">
                                 <img src="assets/images/pro6.PNG" alt="">
                             </a>
@@ -139,187 +150,187 @@
 
         <section id="hobby" class="mb-10">
             <div class="container mx-auto">
-                <div class="card-title">Чөлөөт цаг</div>
-                <div class="subtitle pb-4 italic">Хөтлөн явуулж буй Neflo youtube хуудас</div>
-                <div class="neflo">
+                <div class="card-title" id="left">Чөлөөт цаг</div>
+                <div class="subtitle pb-4 italic" id="right">Хөтлөн явуулж буй Neflo youtube хуудас</div>
+                <div class="neflo" id="right">
                     <!-- Slider main container -->
                     <ul class="swiper-wrapper">
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/watch?v=7KtnnRs2acY">
                                 <img class="filter grayscale" src="assets/images/ne1.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://youtu.be/IDyKQeU44tw">
                                 <img class="filter grayscale" src="assets/images/ne2.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://youtu.be/aZELQFgxo1k">
                                 <img class="filter grayscale" src="assets/images/ne3.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://youtu.be/Xf1a849Z4Iw">
                                 <img class="filter grayscale" src="assets/images/ne4.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne5.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://youtu.be/v4IfBzt-iGA">
                                 <img class="filter grayscale" src="assets/images/ne6.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://youtu.be/QlqdS_LgMkY">
                                 <img class="filter grayscale" src="assets/images/ne7.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne8.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne9.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne10.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne11.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne12.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne13.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne14.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne15.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne16.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne17.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne18.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne19.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne20.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne21.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne22.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne23.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne24.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne25.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne26.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne27.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne28.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne29.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne30.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne31.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne32.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne33.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne34.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne35.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UCLkpn3oZWqMm06A8ZfzhC-A">
                                 <img class="filter grayscale" src="assets/images/ne36.jpg" alt="">
                             </a>
@@ -327,64 +338,64 @@
                     </ul>
                 </div>
                 <div class="subtitle pt-8 pb-4 italic">Хөтлөн явуулж буй iTwizard TV youtube хуудас</div>
-                <div class="wizard">
-                    <ul class="swiper-wrapper">
-                        <li class="swiper-slide">
+                <div class="wizard" id="right">
+                    <ul class="swiper-wrapper" id="right">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it1.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it2.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it3.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it4.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it5.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it6.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it7.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it8.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it9.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it10.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it11.jpg" alt="">
                             </a>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide transform transition duration-500 hover:-translate-y-4">
                             <a target="_blank" href="https://www.youtube.com/channel/UC8CFyKbS5Vcv0V-cAkpdRFw">
                                 <img class="filter grayscale" src="assets/images/it12.jpg" alt="">
                             </a>
@@ -405,6 +416,9 @@
             </div>
         </section>
     </main>
+    <a class="scrollTop" href="javascript:void(0);" onclick="window.scrollTo(0, 0);">
+        <i class="fas fa-arrow-up"></i>
+        </a>
     <!-- scrollreveal animejs -->
     <script src="./assets/js/script.js"></script>
 
