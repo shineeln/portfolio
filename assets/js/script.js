@@ -46,16 +46,43 @@ anime.timeline({ loop: false })
 var swiper = new Swiper(".myProjects", {
     slidesPerView: 3,
     spaceBetween: 30,
+    breakpoints: {
+        360: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+        }
+    },
 });
 
 var swiper = new Swiper(".neflo", {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 30,
+    breakpoints: {
+        360: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+        }
+    },
 });
 
 var swiper = new Swiper(".wizard", {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 30,
+    breakpoints: {
+        360: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+        }
+    },
 });
