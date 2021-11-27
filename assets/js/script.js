@@ -53,6 +53,9 @@ var swiper = new Swiper(".myProjects", {
         640: {
             slidesPerView: 2,
             spaceBetween: 50,
+        },
+        960: {
+            slidesPerView: 4,
         }
     },
 });
@@ -68,6 +71,9 @@ var swiper = new Swiper(".neflo", {
         640: {
             slidesPerView: 2,
             spaceBetween: 50,
+        },
+        960: {
+            slidesPerView: 4,
         }
     },
 });
@@ -83,6 +89,9 @@ var swiper = new Swiper(".wizard", {
         640: {
             slidesPerView: 2,
             spaceBetween: 50,
+        },
+        960: {
+            slidesPerView: 4,
         }
     },
 });
